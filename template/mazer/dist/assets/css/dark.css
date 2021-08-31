@@ -1,0 +1,12 @@
+body {
+    color: #d3d6df;
+    background-color: #343435;
+}
+
+.card, .card-header, .sidebar-wrapper {
+    background-color: #726c86;
+}
+
+a, .form-text, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    color: #d3d6df;
+}

@@ -16,6 +16,8 @@ class Settings
 {
     public $show_messages          = 1;
 
+    public $dark_mode              = 0;
+
     /**
      * Constructor
     */

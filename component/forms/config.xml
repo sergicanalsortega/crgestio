@@ -9,6 +9,16 @@
       <option value="0">CW_NO</option>
       <option value="1">CW_YES</option>
     </field>
+    <field name="dark_mode">
+      <type>list</type>
+      <name>dark_mode</name>
+      <id>dark_mode</id>
+      <label>CW_CONFIG_DARK_MODE</label>
+      <message>CW_CONFIG_DARK_MODE_MSG</message>
+      <default>1</default>
+      <option value="0">CW_NO</option>
+      <option value="1">CW_YES</option>
+    </field>
     <field name="submit">
         <id>btnSubmit</id>
         <onclick>this.form.submit();</onclick>

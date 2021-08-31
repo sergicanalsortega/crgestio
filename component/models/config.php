@@ -24,7 +24,8 @@ class config extends model
       $lang = factory::getLanguage();
 
       $obj = new stdClass();
-      $obj->show_messages  = $app->getVar('show_messages', 0);
+      $obj->show_messages   = $app->getVar('show_messages', 0);
+      $obj->dark_mode       = $app->getVar('dark_mode', 0);
 
       $result = $db->updateRow("#_settings", $obj, 'Id', 1);
 
