@@ -10,7 +10,7 @@
         <type>list</type>
         <name>IdProjecte[]</name>
         <id>IdProjecte</id>
-        <classe>selectizer selectized Projecte</classe>
+        <classe>Projecte</classe>
         <width>20%</width>
         <label>Treball</label>
         <query>SELECT Id,IdClient1 FROM #_Projectes WHERE ClientSegonNom IS NOT NULL ORDER BY ClientSegonNom ASC</query>
