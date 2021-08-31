@@ -216,10 +216,10 @@ $date  	= $app->getVar('date', date('Y-m-d'), 'get');
         for(i=0;i<nbsem;i++)
     {
         calendrier+="<tr align='center'>";
-            for(j=1;j<=7;j++,h++)
+            for(a=1;a<=7;a++,h++)
         {
             afficher.setDate(h);
-            if((afficher.getDay()==j||(afficher.getDay()==0&&j==7))&&afficher.getMonth()==document.Calendrier.Mois.value)
+            if((afficher.getDay()==a||(afficher.getDay()==0&&a==7))&&afficher.getMonth()==document.Calendrier.Mois.value)
             {
                     Sem(document.Calendrier.Annee.value,document.Calendrier.Mois.value,h-1)
                     Sem(document.Calendrier.Annee.value,document.Calendrier.Mois.value,h-1)
