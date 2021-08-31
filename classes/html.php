@@ -905,6 +905,38 @@ class Html
     }
 
     /**
+     * Method to render a switch field
+     * @param $form string the form name
+     * @param $name string the field name
+     * @param $default mixed optional default value
+     * @return $html string a complete radio field html
+    */
+    function getSwitchField($form, $name, $default='')
+    {
+        $lang   = factory::getLanguage();
+
+        $html = "";
+
+        foreach($this->getForm($form) as $field) {
+            if($field['name'] == $name) {
+                $field[0]->onclick != "" ? $onclick = "onclick='".$field[0]->onclick."'" : $onclick = "";
+                $html .= "<div id='".$field[0]->name."-field' class='form-check form-switch'>";
+
+                foreach($field[0]->option as $option) {
+                    $default == $option['value'] ? $checked = "checked='checked'" : $checked = "";
+					$default == $option['value'] ? $checked = "checked" : $checked = "";
+					$html .= "<input type='checkbox' name='".$field[0]->name."' id='".$field[0]->id."' ".$checked." value='".$option['value']."' ".$onclick."  class='form-check-input'>";
+					if($field[0]->label != "") $html .= "<label class='form-check-label'><a class='hasTip' title='".$lang->get($field[0]->placeholder)."'>".$lang->get($option[0])."</a></label> ";
+                }
+
+				$html .= "</div>";
+				$html .= "<div id='".$field[0]->name."Help' class='form-text'>".$lang->get($field[0]->message)."</div><div class='invalid-feedback'>".$lang->get($field[0]->invalid)."</div></div>";
+            }
+        }
+        return $html;
+    }
+
+    /**
      * Method to render a filelist field
      * @param $form string the form name
      * @param $name string the field name
