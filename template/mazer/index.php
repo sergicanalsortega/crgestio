@@ -16,7 +16,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.css"/>
     <link rel="stylesheet" href="<?= $config->site; ?>/template/<?= $config->template; ?>/vendor/messenger-hubspot/build/css/messenger.css">
     <link rel="stylesheet" href="<?= $config->site; ?>/template/<?= $config->template; ?>/vendor/messenger-hubspot/build/css/messenger-theme-flat.css">
-    <link rel="stylesheet" href="<?= $config->site; ?>/assets/css/selectizer.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="<?= $config->site; ?>/template/<?= $config->template; ?>/dist/assets/css/app.css">
     <?php if($settings->dark_mode = 1): ?>
     <link rel="stylesheet" href="<?= $config->site; ?>/template/<?= $config->template; ?>/dist/assets/css/dark.css">
