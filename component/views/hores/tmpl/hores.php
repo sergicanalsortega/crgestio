@@ -43,13 +43,15 @@ $date  	= $app->getVar('date', date('Y-m-d'), 'get');
 
         $('.Projecte').change(function()
         {
-            var id = $(this).val();
+            var id   = $(this).val();
+            var cell = $(this).closest('td').attr("class");
+            console.log(cell);
             $.get(domain+"?view=hores&task=getDataProjecte&id="+id+"&mode=raw")
             .done(function( data ) {
                 data = JSON.parse(data);
-                $('.cell0 .Descripcio').val(data.razonsocial);
-                $('.cell0 .HoresReals').val(data.totalhoresrecompte);
-                $('.cell0 .HoresPrev').val(data.horesprevistes);
+                $('.'+cell+' .Descripcio').val(data.razonsocial);
+                $('.'+cell+' .HoresReals').val(data.totalhoresrecompte);
+                $('.'+cell+' .HoresPrev').val(data.horesprevistes);
             });
         });
 
@@ -427,7 +429,7 @@ $date  	= $app->getVar('date', date('Y-m-d'), 'get');
                             <input type="hidden" name="Data" value="<?= $date; ?>">
                             <input type="hidden" name="view" value="hores">
                             <input type="hidden" name="tab" id="tab" value="diari">
-                            <?= $html->getRepeatable('horesPersonal', array('Id', 'IdProjecte', 'Descripcio', 'Hores', 'HoresReals', 'HoresPrev', 'KM', 'Dietes', 'Observacions'), $model->getRegistresTreballador($date), null, null, null); ?> 
+                            <?= $html->getRepeatable('horesPersonal', array('Id', 'IdProjecte', 'razonsocial', 'Hores', 'totalhoresrecompte', 'horesprevistes', 'KM', 'Dietes', 'Observacions'), $model->getRegistresTreballador($date), null, null, null); ?> 
                             <button type="submit" class="btn btn-primary"><?= $lang->get('CW_SAVE'); ?></button>
                         </form>
                     </div>

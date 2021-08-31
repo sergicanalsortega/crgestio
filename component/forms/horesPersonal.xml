@@ -19,9 +19,9 @@
     >
     <option value="">Projecte</option>
     </field>
-    <field name="Descripcio">
+    <field name="razonsocial">
         <type>text</type>
-        <name>Descripcio[]</name>
+        <name>razonsocial[]</name>
         <id>Descripcio</id>
         <width>15%</width>
         <label>Descripció</label>
@@ -34,17 +34,17 @@
         <width>10%</width>
         <label>Hores</label>
     </field>
-    <field name="HoresReals">
+    <field name="totalhoresrecompte">
         <type>text</type>
-        <name>HoresReals[]</name>
+        <name>totalhoresrecompte[]</name>
         <id>HoresReals</id>
         <width>10%</width>
         <label>Hores Reals</label>
         <clase>HoresReals</clase>
     </field>
-    <field name="HoresPrev">
+    <field name="horesprevistes">
         <type>text</type>
-        <name>HoresPrev[]</name>
+        <name>horesprevistes[]</name>
         <id>HoresPrev</id>
         <width>10%</width>
         <label>Hores Prev</label>

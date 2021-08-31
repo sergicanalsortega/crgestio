@@ -372,7 +372,7 @@ class hores extends model
 
 		$data = $date.'T00:00:00.000Z';
 
-		$db->query('SELECT * FROM #_HoresPersonal WHERE IdTreballador = '.$user->Id.' AND Data = '.$db->quote($data));
+		$db->query('SELECT h.*, v.reftreballfrm, v.razonsocial, v.horesprevistes, v.totalhoresrecompte FROM #_HoresPersonal AS h LEFT JOIN #_vtreballs AS v ON v.IdProjecte = h.IdProjecte WHERE h.IdTreballador = '.$user->Id.' AND h.Data = '.$db->quote($data));
 
 		$rows = $db->fetchObjectList();
 
