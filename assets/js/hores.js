@@ -63,6 +63,7 @@ mois=date.getMonth();
 
 los_meses=["Gener","Febrer","Març","Abril","Maig","Juny","Juliol","Agost","Setembre","Octubre","Novembre","Desembre"];
 los_meses2=["J","F","M","A","M","J","J","A","S","O","N","D"];
+//coment
 los_dias=["D","DIL","DIM","DIM","DIJ","DIV","DIS","DIU"];
 
 function getEvents(firstDay, lastDay){
