@@ -48,7 +48,6 @@
     <script src="<?= $config->site; ?>/assets/js/repeatable-fields.js"></script>
     <script src="<?= $config->site; ?>/template/<?= $config->template; ?>/vendor/messenger-hubspot/build/js/messenger.min.js"></script>
     <script src="<?= $config->site; ?>/template/<?= $config->template; ?>/vendor/messenger-hubspot/build/js/messenger-theme-flat.js"></script>
-    <script src="<?= $config->site; ?>/assets/js/selectizer.js" crossorigin="anonymous"></script>
     <script src="<?= $config->site; ?>/template/<?= $config->template; ?>/dist/assets/js/main.js"></script>
     <?php
     if(count($app->scripts) > 0) :
