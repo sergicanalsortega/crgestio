@@ -1,0 +1,44 @@
+<form>
+    <field name="usergroup">
+      <type>text</type>
+      <name>usergroup</name>
+      <id>usergroup</id>
+      <label>CW_GROUPS_USERGROUP_LABEL</label>
+      <message>CW_GROUPS_USERGROUP_MSG</message>
+      <placeholder>GW_GROUPS_USERGROUP</placeholder>
+      <disabled>false</disabled>
+    </field>
+    <field name="nou">
+        <type>list</type>
+        <name>nou</name>
+        <id>nou</id>
+        <label>Crear</label>
+        <option value="">Sel·lecciona una opció</option>
+        <option value="1">CW_YES</option>
+        <option value="0">CW_NO</option>
+    </field>
+    <field name="editar">
+        <type>list</type>
+        <name>editar</name>
+        <id>editar</id>
+        <label>Editar</label>
+        <option value="">Sel·lecciona una opció</option>
+        <option value="1">CW_YES</option>
+        <option value="0">CW_NO</option>
+    </field>
+    <field name="esborrar">
+        <type>list</type>
+        <name>esborrar</name>
+        <id>esborrar</id>
+        <label>Esborrar</label>
+        <option value="">Sel·lecciona una opció</option>
+        <option value="1">CW_YES</option>
+        <option value="0">CW_NO</option>
+    </field>
+    <field name="views">
+        <type>views</type>
+        <name>views</name>
+        <id>views</id>
+        <label>Views</label>
+    </field>
+</form>

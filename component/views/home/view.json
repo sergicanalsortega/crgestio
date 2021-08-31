@@ -1,0 +1,16 @@
+{
+    "view": {
+        "title": "Home",
+        "slug": "home",
+		"permissions": {
+            "home": {
+                "minlevel": "*",
+                "redirect": ""
+            },
+            "dashboard": {
+                "minlevel": "2",
+                "redirect": "index.php?view=home"
+            }
+        }
+    }
+}

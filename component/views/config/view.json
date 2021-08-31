@@ -1,0 +1,12 @@
+{
+    "view": {
+        "title": "Settings",
+        "slug": "settings",
+		"permissions": {
+            "config": {
+                "minlevel": "1",
+                "redirect": "index.php?view=home"
+            }
+        }
+    }
+}

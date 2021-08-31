@@ -1,0 +1,8 @@
+a, a:focus button, button:focus { outline: 0; }
+a:hover { text-decoration: none; }
+
+div.dataTables_wrapper div.dataTables_filter { display:none; }
+
+.login-page .form-inner {
+	background: #ffffff3b;
+}

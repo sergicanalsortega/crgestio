@@ -1,0 +1,47 @@
+<form>
+    <field name="username">
+      <type>text</type>
+      <name>username</name>
+      <id>username</id>
+      <label>CW_SETTINGS_USERNAME_LABEL</label>
+      <message>CW_SETTINGS_USERNAME_MSG</message>
+      <placeholder>GW_SETTINGS_USERNAME</placeholder>
+      <disabled>false</disabled>
+    </field>
+    <field name="email">
+      <type>text</type>
+      <name>email</name>
+      <id>email</id>
+      <label>CW_SETTINGS_EMAIL_LABEL</label>
+      <message>Invalid email format</message>
+      <placeholder>CW_SETTINGS_EMAIL</placeholder>
+      <disabled>false</disabled>
+    </field>
+    <field name="password">
+      <type>password</type>
+      <name>password</name>
+      <id>password</id>
+      <label>CW_SETTINGS_PASSWORD_LABEL</label>
+      <message></message>
+      <placeholder>CW_SETTINGS_PASSWORD</placeholder>
+      <onchange>checkPassword();</onchange>
+      <disabled>false</disabled>
+    </field>
+    <field name="usergroup">
+      <type>usergroup</type>
+      <name>usergroup</name>
+      <id>usergroup</id>
+      <label>Usergroup</label>
+    </field>
+    <field name="projects">
+        <type>list</type>
+        <name>projects</name>
+        <label>Projectes</label>
+        <id>projects</id>
+        <query>SELECT projecte_id, nom AS nom FROM #_projectes ORDER BY nom</query>
+        <key>projecte_id</key>
+        <value>nom</value>
+        <multiple>true</multiple>
+        <option value="*">Tots els projectes</option>
+    </field>
+</form>

@@ -1,0 +1,12 @@
+{
+    "view": {
+        "title": "Calendar",
+        "slug": "calendar",
+		"permissions": {
+            "calendar": {
+                "minlevel": "1",
+                "redirect": "index.php?view=home"
+            }
+        }
+    }
+}

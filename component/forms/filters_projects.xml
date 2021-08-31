@@ -1,0 +1,26 @@
+<form>
+    <field name="filter_like_nom">
+        <type>text</type>
+        <name>filter_like_nom</name>
+        <id>filter_nom</id>
+        <placeholder>Nom del projecte</placeholder>
+        <onchange></onchange>
+    </field>
+    <!-- buttons -->
+     <button name="btn_new">
+        <id>btn_new</id>
+        <class>new</class>
+        <label>Nou</label>
+        <icon>fa-plus</icon>
+        <href>index.php?view=projects&amp;layout=edit</href>
+    </button>
+    <button name="btn_delete">
+        <id>btn_delete</id>
+        <class>delete</class>
+        <label>Delete</label>
+        <icon>fa-trash-o</icon>
+        <color>danger</color>
+        <view>projects</view>
+        <href>index.php?view=projects&amp;task=deleteItems&amp;mode=raw</href>
+    </button>
+</form>

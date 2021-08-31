@@ -1,0 +1,16 @@
+{
+    "view": {
+        "title": "Groups",
+        "slug": "groups",
+		"permissions": {
+            "groups": {
+                "minlevel": "1",
+                "redirect": "index.php?view=home&layout=dashboard"
+            },
+            "edit": {
+                "minlevel": "1",
+                "redirect": "index.php?view=home&layout=dashboard"
+            }
+        }
+    }
+}

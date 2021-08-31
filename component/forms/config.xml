@@ -1,0 +1,20 @@
+<form>
+    <field name="show_messages">
+      <type>list</type>
+      <name>show_messages</name>
+      <id>show_messages</id>
+      <label>CW_CONFIG_SHOW_MESSAGES</label>
+      <message>CW_CONFIG_SHOW_MESSAGES_MSG</message>
+      <default>1</default>
+      <option value="0">CW_NO</option>
+      <option value="1">CW_YES</option>
+    </field>
+    <field name="submit">
+        <id>btnSubmit</id>
+        <onclick>this.form.submit();</onclick>
+        <size>medium</size>
+        <color>primary</color>
+        <value>CW_SAVE</value>
+        <disabled>false</disabled>
+    </field>
+</form>

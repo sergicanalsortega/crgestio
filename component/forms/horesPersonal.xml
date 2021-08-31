@@ -1,0 +1,73 @@
+<form>
+    <field name="Id">
+        <type>hidden</type>
+        <name>Id[]</name>
+        <id>Id</id>
+        <label></label>
+        <clase>Id</clase>
+    </field>
+    <field name="IdProjecte">
+        <type>list</type>
+        <name>IdProjecte[]</name>
+        <id>IdProjecte</id>
+        <classe>selectizer selectized Projecte</classe>
+        <width>20%</width>
+        <label>Treball</label>
+        <query>SELECT Id,IdClient1 FROM #_Projectes WHERE ClientSegonNom IS NOT NULL ORDER BY ClientSegonNom ASC</query>
+        <key>Id</key>
+        <value>IdClient1</value>
+    >
+    <option value="">Projecte</option>
+    </field>
+    <field name="Descripcio">
+        <type>text</type>
+        <name>Descripcio[]</name>
+        <id>Descripcio</id>
+        <width>15%</width>
+        <label>Descripció</label>
+        <clase>Descripcio</clase>
+    </field>
+    <field name="Hores">
+        <type>text</type>
+        <name>Hores[]</name>
+        <id>Hores</id>
+        <width>10%</width>
+        <label>Hores</label>
+    </field>
+    <field name="HoresReals">
+        <type>text</type>
+        <name>HoresReals[]</name>
+        <id>HoresReals</id>
+        <width>10%</width>
+        <label>Hores Reals</label>
+        <clase>HoresReals</clase>
+    </field>
+    <field name="HoresPrev">
+        <type>text</type>
+        <name>HoresPrev[]</name>
+        <id>HoresPrev</id>
+        <width>10%</width>
+        <label>Hores Prev</label>
+        <clase>HoresPrev</clase>
+    </field>
+    <field name="KM">
+        <type>text</type>
+        <name>KM[]</name>
+        <id>KM</id>
+        <label>KM</label>
+        <width>10%</width>
+    </field>
+    <field name="Dietes">
+        <type>text</type>
+        <name>Dietes[]</name>
+        <id>Dietes</id>
+        <width>10%</width>
+        <label>Dietes</label>
+    </field>
+    <field name="Observacions">
+        <type>text</type>
+        <name>Observacions[]</name>
+        <id>Observacions</id>
+        <label>Observacions</label>
+    </field>
+</form>

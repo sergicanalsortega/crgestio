@@ -1,0 +1,24 @@
+{
+    "view": {
+        "title": "About",
+        "slug": "about",
+		"permissions": {
+            "about": {
+                "minlevel": "*",
+                "redirect": "index.php?view=home"
+            },
+            "api": {
+                "minlevel": "*",
+                "redirect": "index.php?view=home"
+            },
+            "coins": {
+                "minlevel": "*",
+                "redirect": "index.php?view=home"
+            },
+            "log": {
+                "minlevel": "*",
+                "redirect": "index.php?view=home"
+            }
+        }
+    }
+}

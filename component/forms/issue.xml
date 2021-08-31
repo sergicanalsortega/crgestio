@@ -1,0 +1,192 @@
+<form>
+    <field name="nom">
+        <type>text</type>
+        <name>nom</name>
+        <id>nom</id>
+        <label>Títol</label>
+        <message></message>
+        <placeholder>Nom</placeholder>
+        <onchange></onchange>
+        <disabled>false</disabled>
+    </field>
+	<field name="prioritat">
+        <type>list</type>
+        <name>prioritat</name>
+        <id>prioritat</id>
+        <label>Prioritat</label>
+        <message></message>
+     	<option value="">Selecciona una prioritat</option>
+		<option value="1">Normal</option>
+		<option value="2">Urgent</option>
+		<option value="3">Pànic</option>
+    </field>
+    <field name="tipus">
+        <type>list</type>
+        <name>tipus</name>
+        <id>tipus</id>
+        <label>Tipus</label>
+        <message></message>
+        <option value="">Selecciona una tipus</option>
+        <query>SELECT id, nom FROM #_tipus_incidencia ORDER BY id</query>
+        <key>id</key>
+        <value>nom</value>
+    </field>
+    <field name="estat">
+        <type>list</type>
+        <name>estat</name>
+        <id>estat</id>
+        <label>Estat</label>
+        <message></message>
+     	<option value="">Selecciona una estat</option>
+		<option value="1">Pendent</option>
+		<option value="2">En progrés</option>
+		<option value="3">Resolt</option>
+		<option value="4">Descartat</option>
+    </field>
+    <field name="usuari">
+        <type>text</type>
+        <name>usuari</name>
+        <id>usuari</id>
+        <label>Usuari principal assignat</label>
+        <message></message>
+        <onchange></onchange>
+        <disabled>false</disabled>
+    </field>
+    <field name="usergroup">
+      <type>usergroup</type>
+      <name>usergroup</name>
+      <id>usergroup</id>
+      <label>Usergroup</label>
+    </field>
+    <field name="altres_usuaris">
+        <type>text</type>
+        <name>altres_usuaris</name>
+        <id>altres_usuaris</id>
+        <label>Altres usuaris assignats</label>
+        <message></message>
+        <onchange></onchange>
+        <disabled>false</disabled>
+        <multiple>true</multiple>
+    </field>
+    <field name="tags">
+        <type>list</type>
+        <name>tags</name>
+        <id>tags</id>
+        <label>Tags</label>
+        <option value="">Sel·lecciona un tag</option>
+        <option value="Disseny">Disseny</option>
+        <option value="Programació">Programació</option>
+        <option value="SEO">SEO</option>
+        <option value="Usabilitat">Usabilitat</option>
+        <option value="Accesibilitat">Accesibilitat</option>
+    </field>
+    <field name="parentId">
+        <type>text</type>
+        <name>parentId</name>
+        <id>parentId</id>
+        <label>Tasca pare</label>
+        <message></message>
+        <onchange></onchange>
+        <readonly>true</readonly>
+    </field>
+    <field name="temps_previst">
+        <type>list</type>
+        <name>temps_previst</name>
+        <id>temps_previst</id>
+        <classe>selectizer</classe>
+        <label>Temps previst (hh:mm)</label>
+        <required>true</required>
+        <option value="">hh:mm</option>
+        <option value="10">00:15</option>
+        <option value="30">00:30</option>
+		<option value="45">00:45</option>
+        <option value="60">01:00</option>
+		<option value="90">01:30</option>
+        <option value="120">02:00</option>
+		<option value="150">02:30</option>
+        <option value="180">03:00</option>
+		<option value="210">03:30</option>
+        <option value="240">04:00</option>
+		<option value="270">04:30</option>
+		<option value="300">05:00</option>
+		<option value="330">05:30</option>
+		<option value="360">06:00</option>
+		<option value="390">06:30</option>
+		<option value="420">07:00</option>
+		<option value="450">07:30</option>
+		<option value="480">08:00</option>
+		<option value="510">08:30</option>
+		<option value="540">09:00</option>
+		<option value="570">09:30</option>
+		<option value="600">10:00</option>
+
+    </field>
+    <field name="projecteId">
+        <type>list</type>
+        <name>projecteId</name>
+        <label>Projecte</label>
+        <classe>selectizer</classe>
+        <id>projecteId</id>
+        <option value="">Projecte</option>
+    </field>
+    <field name="temps_invertit">
+        <type>list</type>
+        <name>temps_invertit</name>
+        <id>temps_invertit</id>
+        <classe>selectizer</classe>
+        <label>Temps invertit (hh:mm)</label>
+        <option value="">hh:mm</option>
+        <option value="10">00:15</option>
+        <option value="30">00:30</option>
+		<option value="45">00:45</option>
+        <option value="60">01:00</option>
+		<option value="90">01:30</option>
+        <option value="120">02:00</option>
+		<option value="150">02:30</option>
+        <option value="180">03:00</option>
+		<option value="210">03:30</option>
+        <option value="240">04:00</option>
+		<option value="270">04:30</option>
+		<option value="300">05:00</option>
+		<option value="330">05:30</option>
+		<option value="360">06:00</option>
+		<option value="390">06:30</option>
+		<option value="420">07:00</option>
+		<option value="450">07:30</option>
+		<option value="480">08:00</option>
+		<option value="510">08:30</option>
+		<option value="540">09:00</option>
+		<option value="570">09:30</option>
+		<option value="600">10:00</option>
+    </field>
+	<field name="data_incidencia">
+        <type>text</type>
+        <name>data_incidencia</name>
+        <id>data_incidencia</id>
+        <label></label>
+		<format>YYYY-MM-DD H:m</format>
+        <message></message>
+        <onchange></onchange>
+        <disabled>false</disabled>
+    </field>
+    <field name="data_factura">
+        <type>text</type>
+        <name>data_factura</name>
+        <id>data_factura</id>
+        <label></label>
+		<format>YYYY-MM-DD H:m:s</format>
+        <message></message>
+        <onchange></onchange>
+        <disabled>false</disabled>
+    </field>
+    <field name="data_limit">
+        <type>text</type>
+        <name>data_limit</name>
+        <id>data_limit</id>
+        <label>Data limit</label>
+		<format>YYYY-MM-DD H:m:s</format>
+        <message></message>
+        <onchange></onchange>
+        <disabled>false</disabled>
+    </field>
+</form>

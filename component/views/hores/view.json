@@ -1,0 +1,12 @@
+{
+    "view": {
+        "title": "Hores",
+        "slug": "hores",
+		"permissions": {
+            "hores": {
+                "minlevel": "1",
+                "redirect": "index.php?view=home"
+            }
+        }
+    }
+}

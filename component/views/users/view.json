@@ -1,0 +1,16 @@
+{
+    "view": {
+        "title": "Users",
+        "slug": "users",
+		"permissions": {
+            "users": {
+                "minlevel": "1",
+                "redirect": "index.php?view=home&layout=dashboard"
+            },
+            "edit": {
+                "minlevel": "1",
+                "redirect": "index.php?view=home&layout=dashboard"
+            }
+        }
+    }
+}

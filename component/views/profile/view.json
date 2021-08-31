@@ -1,0 +1,12 @@
+{
+    "view": {
+        "title": "Profile",
+        "slug": "profile",
+		"permissions": {
+            "profile": {
+                "minlevel": "2",
+                "redirect": "index.php?view=home"
+            }
+        }
+    }
+}

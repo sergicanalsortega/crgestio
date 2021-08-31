@@ -1,0 +1,10 @@
+<form>
+    <!-- buttons -->
+     <button name="btn_legal">
+        <id>btn_backup</id>
+        <class></class>
+        <label>Backup</label>
+        <icon>fa-database</icon>
+        <href>index.php?task=tools.backup_tables</href>
+    </button>
+</form>

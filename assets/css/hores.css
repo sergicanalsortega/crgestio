@@ -1,0 +1,82 @@
+.fc-today {
+    background: #cccccf !important;
+    border: none !important;
+    border-top: 1px solid #ddd !important;
+    font-weight: bold;
+} 
+
+.fc-day:hover{
+    background: #e9eaed;
+}
+
+.fc-day-grid{
+    cursor: pointer;
+}
+
+/*Allow pointer-events through*/
+.fc-slats, /*horizontals*/
+.fc-content-skeleton, /*day numbers*/
+.fc-bgevent-skeleton /*events container*/{
+    pointer-events: none;
+}
+
+/*Turn pointer events back on*/
+.fc-bgevent,
+.fc-event-container{
+    pointer-events: auto; /*events*/
+}
+
+.fc-sun.fc-day{ 
+    background-color: #ef1c21;
+    opacity: .3;
+}
+
+.fc-sat.fc-day{ 
+    background-color:#ffc308;  
+    opacity: .1;
+}
+
+.fc-day-number{
+    font-size: 22px;
+}
+
+/* Legend */
+
+.square {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+}
+
+.red {
+    background-color: #ef1c21;
+}
+
+.yellow {
+    background-color: #ffc308;
+}
+
+.blue1 {
+    background-color: #00c3c6;
+}
+
+.blue2 {
+    background-color: #0020ff;
+}
+
+.blue3 {
+    background-color: #000094;
+}
+
+.green {
+    background-color: #21b24a;
+}
+
+.black {
+    background-color: #000000;
+}
+
+#Calendrier tr{
+    border-width: 1px !important;
+    border-style: none !important;
+}

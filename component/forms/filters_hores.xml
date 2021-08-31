@@ -1,0 +1,12 @@
+<form>
+    <!-- buttons -->
+     <button name="btn_calg">
+        <id>btn_cal</id>
+        <color>primary</color>
+        <label>Cal·laboral</label>
+        <icon>bi bi-calendar</icon>
+        <class>btn-sm mb-3</class>
+        <href>index.php?view=hores&amp;layout=calendar&amp;mode=component</href>
+        <target>_blank</target>
+    </button>
+</form>

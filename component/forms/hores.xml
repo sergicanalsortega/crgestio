@@ -1,0 +1,33 @@
+<form>
+    <field name="Id">
+        <type>hidden</type>
+        <name>Id[]</name>
+        <id>Id</id>
+        <label></label>
+        <message></message>
+    </field>
+    <field name="Hora">
+        <type>datetime</type>
+        <name>Hora[]</name>
+        <id>Hora</id>
+        <label>Hora</label>
+        <message></message>
+    </field>
+    <field name="TipusMoviment">
+        <type>list</type>
+        <name>TipusMoviment[]</name>
+        <id>TipusMoviment</id>
+        <label>Tipus Mov.</label>
+        <message></message>
+    >
+    <option value="Entrada">Entrada</option>
+    <option value="Sortida">Sortida</option>
+    </field>
+    <field name="Comentari">
+        <type>text</type>
+        <name>Comentari[]</name>
+        <id>Comentari</id>
+        <label>Comentari</label>
+        <placeholder>Observacions</placeholder>
+    </field>
+</form>

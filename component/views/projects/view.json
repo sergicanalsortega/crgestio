@@ -1,0 +1,20 @@
+{
+    "view": {
+        "title": "Projects",
+        "slug": "projects",
+		"permissions": {
+            "projects": {
+                "minlevel": "2",
+                "redirect": "index.php?view=home",
+                "new": "2",
+                "delete": "1"
+            },
+            "edit": {
+                "minlevel": "1",
+                "redirect": "index.php?view=home",
+                "save": "2",
+                "delete": "1"
+            }
+        }
+    }
+}

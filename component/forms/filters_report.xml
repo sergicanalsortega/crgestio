@@ -1,0 +1,52 @@
+<form>
+    <field name="filter_equal_usuari">
+        <type>list</type>
+        <name>filter_equal_usuari</name>
+        <id>filter_usuari</id>
+        <query>SELECT id, username FROM #_users</query>
+        <key>id</key>
+        <value>username</value>
+        <option value="">Usuari</option>
+    </field>
+    <field name="filter_equal_projecteId">
+        <type>list</type>
+        <name>filter_equal_projecteId</name>
+        <id>filter_projecteId</id>
+        <query>SELECT DISTINCT projecte_id, UPPER(#_projectes.nom) AS nom FROM #_projectes INNER JOIN #_incidencies ON #_projectes.projecte_id=#_incidencies.projecteId WHERE data_factura='0000-00-00 00:00:00' AND estat=3 ORDER BY #_projectes.nom</query>
+        <key>projecte_id</key>
+        <value>nom</value>
+        <option value="">Projecte</option>
+    </field>
+    <field name="list">
+        <type>list</type>
+        <name>list</name>
+        <id>filter_list</id>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="*">All</option>
+        <onchange></onchange>
+    </field>
+    <!-- buttons -->
+    <button name="btn_facturarTot">
+        <class>facturar</class>
+        <view>report</view>
+        <label>Facturar</label>
+        <icon>fa fa-credit-card-alt</icon>
+        <href>index.php?view=report&amp;task=facturar&amp;mode=raw</href>
+    </button>
+    <button name="btn_exportXls">
+        <class>xls</class>
+        <view>report</view>
+        <label>Excel</label>
+        <icon>fa fa-file</icon>
+        <href>index.php?view=report&amp;task=xls&amp;mode=raw</href>
+    </button>
+    <button name="btn_exportPdf">
+        <class>pdf</class>
+        <view>report</view>
+        <label>Pdf</label>
+        <icon>fa fa-file</icon>
+        <href>index.php?view=report&amp;task=pdf&amp;mode=raw</href>
+    </button>
+</form>

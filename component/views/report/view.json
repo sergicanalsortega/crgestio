@@ -1,0 +1,16 @@
+{
+    "view": {
+        "title": "Report",
+        "slug": "report",
+		"permissions": {
+            "report": {
+                "minlevel": "*",
+                "redirect": ""
+            },
+            "legal": {
+                "minlevel": "*",
+                "redirect": ""
+            }
+        }
+    }
+}
